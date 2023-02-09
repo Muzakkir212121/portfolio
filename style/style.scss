@@ -896,6 +896,12 @@ body{
         }
     }
 
+    .exp{
+        &-content{
+            width: 93vw;
+        }
+    }
+
     .contact{
         padding: 20px 15px 15px 15px;
         gap: 20px;

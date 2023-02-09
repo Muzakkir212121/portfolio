@@ -741,6 +741,9 @@ body {
     height: calc(100vw - 30px);
     box-shadow: none;
   }
+  .exp-content {
+    width: 93vw;
+  }
   .contact {
     padding: 20px 15px 15px 15px;
     gap: 20px;
