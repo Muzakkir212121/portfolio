@@ -86,3 +86,14 @@ body{
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .projects{
+        width: 90vw;
+        grid-template-columns: repeat(1,1fr);
+
+        .project{
+            height: 90vw;
+        }
+    }
+}
