@@ -426,17 +426,13 @@ body {
     display: none;
   }
   .home {
-    flex-direction: column;
-    justify-content: center;
+    padding-left: 10vw;
   }
   .home-left {
     order: 1;
   }
   .home-left-header div {
     font-size: 25px;
-  }
-  .home-right img {
-    width: 60vw;
   }
   .about {
     padding: 20px 15px;
@@ -451,45 +447,7 @@ body {
     gap: 20px;
   }
   .about-content img {
-    width: 60vw;
-  }
-  .skills {
-    padding: 10px 15px;
-    gap: 10px;
-  }
-  .skills-header {
-    font-size: 30px;
-  }
-  .skills-content {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .education {
-    padding-top: 20px;
-    gap: 20px;
-  }
-  .education-header {
-    font-size: 30px;
-  }
-  .education-content {
-    width: 100%;
-    align-items: center;
-    width: 95vw;
-  }
-  .education-content .school {
-    flex-direction: column;
-    width: calc(100vw - 30px);
-    padding: 10px;
-  }
-  .education-content .school .univ-pic {
-    border-radius: 10px;
-    width: calc(100vw - 30px - 20px);
-    height: calc(100vw - 30px - 20px);
-  }
-  .education-content .school .univ-pic img {
-    border-radius: 10px;
-    width: calc(100vw - 30px - 20px);
-    height: calc(100vw - 30px - 20px);
+    width: 40vw;
   }
   .work {
     padding: 10px 15px 10px 15px;
@@ -499,12 +457,16 @@ body {
     font-size: 30px;
   }
   .work-content {
-    width: 100%;
-    grid-template-columns: 1fr;
+    width: 98vw;
   }
-  .work-content-item {
-    height: calc(100vw - 30px);
-    box-shadow: none;
+  .work-content .project {
+    flex-direction: column-reverse;
+  }
+  .work-content .project-explain {
+    width: 90%;
+  }
+  .work-content .project-img {
+    width: 90%;
   }
   .exp-content {
     width: 93vw;

@@ -506,8 +506,7 @@ body{
     }
 
     .home{
-        flex-direction: column;
-        justify-content: center;
+        padding-left: 10vw;
         
         &-left{
             order: 1;
@@ -516,12 +515,6 @@ body{
                 div{
                     font-size: 25px;
                 }
-            }
-        }
-
-        &-right{
-            img{
-                width: 60vw;
             }
         }
     }
@@ -540,52 +533,7 @@ body{
             gap: 20px;
 
             img{
-                width: 60vw;
-            }
-        }
-    }
-
-    .skills{
-        padding: 10px 15px;
-        gap: 10px;
-
-        &-header{
-            font-size: 30px;
-        }
-
-        &-content{
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(3,1fr);
-        }
-    }
-
-    .education{
-        padding-top: 20px;
-        gap: 20px;
-
-        &-header{
-            font-size: 30px;
-        }
-
-        &-content{
-            width: 100%;
-            align-items: center;
-            width: 95vw;
-
-            .school{
-                flex-direction: column;
-                width: calc(100vw - 30px);
-                padding: 10px;
-                .univ-pic{
-                    border-radius: 10px;
-                    width: calc(100vw - 30px - 20px);
-                    height: calc(100vw - 30px - 20px);
-                    img{
-                        border-radius: 10px;
-                        width: calc(100vw - 30px - 20px);
-                        height: calc(100vw - 30px - 20px);
-                    }
-                }
+                width: 40vw;
             }
         }
     }
@@ -599,12 +547,18 @@ body{
         }
 
         &-content{
-            width: 100%;
-            grid-template-columns: 1fr;
+            width: 98vw;
+            
+            .project{
+                flex-direction: column-reverse;
 
-            &-item{
-                height: calc(100vw - 30px);
-                box-shadow: none;
+                &-explain{
+                    width: 90%;
+                }
+
+                &-img{
+                    width: 90%;
+                }
             }
         }
     }
