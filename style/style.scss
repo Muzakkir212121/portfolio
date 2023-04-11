@@ -138,7 +138,6 @@ body{
             a{
                 width: 45px;
                 height: 45px;
-                background-color: red;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
@@ -316,7 +315,7 @@ body{
             font-weight: bold;
         }
 
-        .wht{
+        .gr{
             color:#149383;
         }
     }
@@ -388,10 +387,6 @@ body{
                 &:hover svg{
                     transform: rotate(43deg);
                 }
-
-                &:hover span{
-                    color: white;
-                }
             }
         }
     }
@@ -408,16 +403,43 @@ body{
     &-top{
         width: 70%;
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
 
         &-left{
-            &-header{
-                font-size: 30px;
-                font-weight: bold;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+
+            a{
+                width: 45px;
+                height: 45px;
+                background-color: red;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 10px rgb(0,0,0,.6);
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+
+                svg{
+                    margin-left: 1px;
+                    width: 30px;
+                    height: 30px;
+                    color: white;
+                }
             }
-            .wht{
-                color: #ddd;
+            
+            .lin{
+                background-color: #0A66C2;
+            }
+
+            .git{
+                background-color: #171515;
             }
         }
 
@@ -426,11 +448,6 @@ body{
             flex-direction: column;
             gap: 5px;
 
-            &-header{
-                color: black;
-                font-size: 30px;
-            }
-
             .phone,.email,.place{
                 display: flex;
                 align-items: center;
@@ -438,9 +455,6 @@ body{
 
                 svg{
                     color: black;
-                }
-                span{
-                    color: #ddd;
                 }
             }
         }
@@ -461,10 +475,6 @@ body{
         svg{
             animation: love .5s alternate infinite;
         }
-
-        .wht{
-            color: #ddd;
-        }
     }
 }
 
@@ -477,7 +487,8 @@ body{
     }
 }
 
-@media screen and (max-width: 800px) {
+// responsive on mobile
+@media screen and (max-width: 600px) {
     .nav-bar{
         justify-content: space-between;
         padding: 0 10px;
@@ -608,24 +619,70 @@ body{
             width: 100%;
             justify-content: space-between;
             flex-direction: column;
+            align-items: flex-start;
 
             &-left{
-                text-align: center;
-                &-header{
-                    font-size: 20px;
-                }
-            }
-
-            &-right{
-                margin-top: 10px;
-                &-header{
-                    font-size: 20px;
-                }
+                display: none;
             }
         }
 
         .line{
             width: 100%;
+        }
+    }
+}
+
+// responsive on tablet
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .home{
+        padding-left: 10vw;
+    }
+
+    .about{
+        padding: 20px 15px;
+        gap: 20px;
+
+        &-header{
+            font-size: 30px;
+        }
+
+        &-content{
+            width: 87vw;
+            gap: 20px;
+
+            img{
+                width: 40vw;
+            }
+        }
+    }
+
+    .work{
+        padding: 10px 15px 10px 15px;
+        gap: 10px;
+
+        &-header{
+            font-size: 30px;
+        }
+
+        &-content{
+            width: 87vw;
+            
+            .project{
+                flex-direction: column-reverse;
+
+                &-explain{
+                    width: 100%;
+                }
+
+                &-img{
+                    width: 100%;
+                }
+
+                &:nth-child(even){
+                    flex-direction: column-reverse;
+                }
+            }
         }
     }
 }
