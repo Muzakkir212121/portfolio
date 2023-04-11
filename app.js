@@ -16,12 +16,3 @@ click_mobile_close.addEventListener("click", () => {
     click_mobile.style.display = "inline"
     click_mobile_close.style.display = "none"
 })
-
-const works = document.querySelectorAll(".work-content-item")
-
-works.forEach(function(work){
-    let length = work.classList.value.length
-    let backgroundImage = work.classList.value.slice(18,length)
-
-    work.style.backgroundImage = `url("../pic/${backgroundImage}.png")`
-})
