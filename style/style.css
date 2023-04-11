@@ -472,6 +472,9 @@ body {
   .work-content .project-img {
     width: 90%;
   }
+  .work-content .project:nth-child(even) {
+    flex-direction: column-reverse;
+  }
   .exp-content {
     width: 93vw;
   }
