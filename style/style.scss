@@ -502,7 +502,8 @@ body{
             }
 
             &-item-mobile{
-                display: inline;
+                display: flex;
+                align-items: center;
                 z-index: 999;
 
                 .menu{

@@ -426,7 +426,8 @@ body {
     display: none;
   }
   .nav-bar .nav-list-item-mobile {
-    display: inline;
+    display: flex;
+    align-items: center;
     z-index: 999;
   }
   .nav-bar .nav-list-item-mobile .menu {
