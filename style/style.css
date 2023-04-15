@@ -231,15 +231,15 @@ body {
   gap: 20px;
 }
 .work-content .project-explain .project-link a {
-  color: black;
+  color: #ddd;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.2s;
 }
 .work-content .project-explain .project-link a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .work-content .project-img {
   width: 60%;
