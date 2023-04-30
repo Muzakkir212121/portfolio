@@ -507,6 +507,7 @@ body {
   .contact-content {
     width: 100%;
     padding: 10px;
+    border-radius: 0;
   }
   .contact-content img {
     display: none;
